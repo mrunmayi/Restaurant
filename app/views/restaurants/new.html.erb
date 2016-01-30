@@ -1,0 +1,23 @@
+<h1>Restaurants#new</h1>
+
+<%= form_for @restaurant do |f|%>
+	  <p>
+	  <%= f.label :name %> <br>
+	  <%= f.text_field :name %>
+      </p>
+      <p>
+      <%= f.label :address %> <br>
+	  <%= f.text_field :address %>
+	  </p>
+	  <p>
+	  <%= f.label :phone_number %><br>
+	  <%= f.text_field :phone_number %>
+	  </p>
+	  <p>
+	  <%= f.label :description %> <br>
+	  <%= f.text_field :description %>	  
+      </p>
+
+      <%= f.submit %>
+	</form>
+<% end %>
